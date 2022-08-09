@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="mysql-connector-java-8.0.25">
+    <archive path="D:/Java exercise/project With Java/taxi_online/libraries/mysql-connector-java-8.0.25.jar" />
+    <archive path="D:/Java exercise/project With Java/taxi_online/libraries/protobuf-java-3.11.4.jar" />
+  </library>
+</eclipse-userlibraries>
+

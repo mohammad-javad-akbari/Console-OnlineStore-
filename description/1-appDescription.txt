@@ -1,0 +1,19 @@
+1.login , register 
+
+2.-show products in shop and ordering , -search , -cart,-favorit list
+
+
+2)
+-show products in shop and ordering: 
+	add cart 
+	add to favorite
+	back 
+-search
+	input product 1.name or 2.product_code 3.category 
+	 back 
+-cart
+	get cart products from database 
+	back 
+-favorit list
+	get favorit products from database 
+	back 
