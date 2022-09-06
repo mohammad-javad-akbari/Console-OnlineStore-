@@ -29,6 +29,7 @@ public class ProductDatabase extends DatabaseAccess<Product> {
 
         //get connection from super class
         Connection connection = getConnection();
+        List<Product> products = null;
         try {
             //create statement from connection
             Statement statement = connection.createStatement();
@@ -38,7 +39,7 @@ public class ProductDatabase extends DatabaseAccess<Product> {
             ResultSet resultSet = statement.executeQuery(query);
 
             //get products from ResultSet and put them into List Of Product
-            List<Product> products = new ArrayList<>();
+            products = new ArrayList<>();
 
             while (resultSet.next()) {
                 int columnIdIndex = resultSet.findColumn("id");
@@ -57,7 +58,7 @@ public class ProductDatabase extends DatabaseAccess<Product> {
 
                 List<Category> categories = categoryDatabase.getCategoriesByProductId(id);
 
-                products.add(new Product(id,productCode,price,priceInOff,color,brand,name,categories,product_description));
+                products.add(new Product(id, productCode, price, priceInOff, color, brand, name, categories, product_description));
 
             }
 
@@ -67,7 +68,7 @@ public class ProductDatabase extends DatabaseAccess<Product> {
         }
 
 
-        return null;
+        return products;
     }
 
 }

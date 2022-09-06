@@ -11,8 +11,7 @@ import com.screens.FavoriteScreen;
 import com.screens.SearchScreen;
 import com.screens.ShoppingScreen;
 
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
 
@@ -21,7 +20,7 @@ public class Main {
     private UserAuthentication loginAuthentication;
 
     public static void main(String[] args) {
-        /*Main main = new Main();
+        Main main = new Main();
         Scanner scanner = new Scanner(System.in); //for get input from user
         UserDatabase userDatabase = new UserDatabase(); // communication with user table in database
         main.userAuthenticationDatabase = new UserAuthenticationDatabase(); // for authentication operation in database
@@ -98,12 +97,9 @@ public class Main {
                 FavoriteScreen.main(args);
                 break;
         }
-*/
 
 
     }
-
-
 
     private boolean isRegexCorrect(String inputValue, String regex) {
         return inputValue.matches(regex);

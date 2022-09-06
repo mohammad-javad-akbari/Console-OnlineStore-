@@ -11,8 +11,10 @@ public class ShoppingScreen {
         ProductDatabase productDatabase = new ProductDatabase();
 
         List<Product> products = productDatabase.getAll();
-
         System.out.println(products);
+
+        System.out.println("\n\n");
+        System.out.println("1. Order 2.add to your favorite list a product ");
 
     }
 
